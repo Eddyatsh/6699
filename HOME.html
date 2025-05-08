@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人主页</title>
+  <style>
+    :root {
+      --black: #000;
+      --white: #fff;
+      --gray: #999;
+      --light-gray: #f7f7f7;
+      --orange: #ff6600;
+      --gradient: linear-gradient(90deg, #7f5af0, #f05ca2);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      background-color: var(--white);
+      color: var(--black);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 1.5rem;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: left;
+      position: absolute;
+      top: 1rem;
+      left: 2rem;
+    }
+
+    nav {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--gray);
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: var(--black);
+    }
+
+    .welcome {
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--gray);
+      padding: 0.3rem 1rem;
+      border-radius: 2rem;
+      display: inline-block;
+      border: 1px solid #ddd;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    h1 .highlight {
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.8;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 999px;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: var(--gradient);
+      color: white;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: #333;
+      border: 1px solid #ddd;
+    }
+
+    .btn-secondary:hover {
+      background: var(--light-gray);
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .social-icon {
+      font-size: 1.5rem;
+      color: var(--black);
+      transition: color 0.3s;
+    }
+
+    .social-icon:hover {
+      color: var(--orange);
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">6699</div>
+  <nav>
+    <a href="#">首页</a>
+    <a href="#">项目</a>
+    <a href="#">技能</a>
+    <a href="#">关于</a>
+    <a href="#">联系</a>
+  </nav>
+
+  <div class="welcome">欢迎来到引号学院</div>
+
+  <h1>
+    我是 <span class="highlight">姜垣浩</span><br />
+    一名 <span class="highlight">职业培训师</span>
+  </h1>
+
+  <p class="subtitle">
+    专注于打造参与感、趣味性、实用性一体的专业培训体验。<br />
+    我将创意想法+底层逻辑转化为高互动的实战课堂 。
+  </p>
+
+  <div class="actions">
+    <a href="#" class="btn btn-primary">查看我的课程</a>
+    <a href="#" class="btn btn-secondary">联系我</a>
+  </div>
+
+  <div class="social-links">
+    <a href="#" class="social-icon">🐱</a>
+    <a href="#" class="social-icon">🔗</a>
+    <a href="#" class="social-icon">🐦</a>
+  </div>
+</body>
+</html>
